@@ -21,3 +21,9 @@ The [public static preview](https://azyl-50752.ag3nts.org/) was published after 
 The reader was implemented by Codex with `gpt-6-astra` at high reasoning effort. Separate workers implemented the digest view, JSON route, board links and route tests with `gpt-6-luna` at low reasoning effort. Each worker used a separate Git worktree; the coordinator reviewed their changes, integrated the shared routes and performed the final checks. These model names identify the implementation workers, not a model called by the application. The digest itself is deterministic TypeScript and makes no LLM requests.
 
 The tracker is [GitHub Issues](https://github.com/MaChilicki/mega-dev-s01e04/issues?q=label%3Aplan%3Amorning-digest). Review issue 6 was initially closed after delivery acknowledgement, but the course rejected that timing because the reviewer had not looked yet. It was reopened and closed only after explicit confirmation that the reviewer had seen the preview. Cleanup is now complete. The [archived plan](plans/done/2026-10-29-morning-digest.md) records the seven issues and this lifecycle correction. Course acceptance is recorded separately from implementation completion.
+
+The course accepted completion on 29 October 2026 at 10:10:08 UTC. The
+[saved debrief](https://hq.mega.dev/challenges/before-i-looked#debrief) records one refused try
+and the review-lifecycle correction. At debrief time, the approved issue fields existed in drafts
+and published issues; afterward they were also recorded in AGENTS.md so future workers can reuse
+the agreed shape without reconstructing it from examples.

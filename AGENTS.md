@@ -30,6 +30,16 @@ Read first: `docs/vision.md`, `docs/styleguide.md`. Decisions: `docs/adr/`.
 5. An issue is closed only when its "Done when" holds. If it can't hold yet, leave it open and
    say what it waits on.
 
+Every issue from the morning-digest plan starts with `Source: plan.md § <n>` and carries the
+`plan:morning-digest` label. Its body contains Scope, Constraints, Blocked by, Done when,
+Evidence, and Worker and completion. These fields were chosen by the human when reviewing
+the split. Resolve dependency references to real issue numbers before publishing.
+
+Sending a review link acknowledges delivery, not review completion. An issue waiting for an
+outside reviewer stays open until the reviewer confirms the look, and it blocks marker cleanup.
+Ask the human separately before replacing a public preview without its marker, then verify the
+same public URL before closing cleanup and archiving the plan.
+
 ## Skills
 
 Shared skills live in `.agents/skills/`, one folder each, `SKILL.md` inside. That folder is the
