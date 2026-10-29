@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { DigestRow, NightDigest, ReadNight, RunStatus } from './types';
+import type { DigestRow, NightDigest, ReadNight, RunStatus } from './types.js';
 
 type RunEvent = {
   at: string;
