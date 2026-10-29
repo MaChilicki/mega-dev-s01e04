@@ -12,7 +12,9 @@ The application listens on `127.0.0.1` only. The reviewer receives a self-contai
 
 Run `pnpm install --frozen-lockfile`, `pnpm typecheck` and `pnpm test`. The integrated implementation passed 21 tests on 29 October 2026. The tests cover missing and empty files, malformed input, null owners, timestamp offsets, chronology, retry recovery, failure warnings, escaping and complete agreement between HTML and JSON rows. Both checked-in nightly fixtures remain unchanged.
 
-The sample for 28 October contains five jobs, one bad line, ten `ok` events, four `retry` events and one `fail` event. The sample for 27 October contains four jobs and seven `ok` events. Both report pages, the board links and the warning styles were inspected in a browser. Publication, reviewer acceptance and marker cleanup have not happened yet.
+The sample for 28 October contains five jobs, one bad line, ten `ok` events, four `retry` events and one `fail` event. The sample for 27 October contains four jobs and seven `ok` events. Both report pages, the board links and the warning styles were inspected in a browser.
+
+The [public static preview](https://azyl-50752.ag3nts.org/) was published after an exact-content HTTPS probe. Its bytes match the locally rendered page. The static server sends `Cache-Control: public, no-store, no-transform` to preserve the HTML without proxy-injected analytics. Reviewer delivery, acceptance and marker cleanup have not happened yet.
 
 ## Work allocation
 
