@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-10-29
 ---
 
 # Morning digest
@@ -77,3 +78,19 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Worker | Closed |
+|---|---|---|---|
+| 1 | [Read and aggregate the nightly run log](https://github.com/MaChilicki/mega-dev-s01e04/issues/1) | Codex · gpt-6-astra · high | 2026-10-29 |
+| 2 | [Render the nightly digest page](https://github.com/MaChilicki/mega-dev-s01e04/issues/2) | Codex · gpt-6-luna · low | 2026-10-29 |
+| 3 | [Expose the same digest through JSON](https://github.com/MaChilicki/mega-dev-s01e04/issues/3) | Codex · gpt-6-luna · low | 2026-10-29 |
+| 4 | [Link each night from the status board](https://github.com/MaChilicki/mega-dev-s01e04/issues/4) | Codex · gpt-6-luna · low | 2026-10-29 |
+| 5 | [Verify digest routes and HTML/JSON parity](https://github.com/MaChilicki/mega-dev-s01e04/issues/5) | Codex · gpt-6-luna · low | 2026-10-29 |
+| 6 | [Publish a self-contained digest preview for review](https://github.com/MaChilicki/mega-dev-s01e04/issues/6) | Codex · gpt-6.1-sol · medium | 2026-10-29 |
+| 7 | [Remove the public marker after review and archive the plan](https://github.com/MaChilicki/mega-dev-s01e04/issues/7) | Codex · gpt-6.1-sol · medium | 2026-10-29 |
+
+The reviewer confirmed that the marked preview had been seen before cleanup. With the human's separate approval, the page was regenerated with LANE_MARKER unset and uploaded over the same HTTPS URL. A fresh public fetch matched the clean render and showed no marker set. The complete digest content stayed unchanged.
+
+The original delivery wording above is retained as history. The course subsequently required issue 6 to remain open until the reviewer actually looked; an early closure was rejected and corrected before cleanup.
