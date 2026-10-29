@@ -14,10 +14,10 @@ Run `pnpm install --frozen-lockfile`, `pnpm typecheck` and `pnpm test`. The inte
 
 The sample for 28 October contains five jobs, one bad line, ten `ok` events, four `retry` events and one `fail` event. The sample for 27 October contains four jobs and seven `ok` events. Both report pages, the board links and the warning styles were inspected in a browser.
 
-The [public static preview](https://azyl-50752.ag3nts.org/) was published after an exact-content HTTPS probe. Its bytes match the locally rendered page. The static server sends `Cache-Control: public, no-store, no-transform` to preserve the HTML without proxy-injected analytics. Reviewer delivery, acceptance and marker cleanup have not happened yet.
+The [public static preview](https://azyl-50752.ag3nts.org/) was published after an exact-content HTTPS probe. Its bytes match the locally rendered page. The static server sends `Cache-Control: public, no-store, no-transform` to preserve the HTML without proxy-injected analytics. The course acknowledged delivery to the reviewer. Review acceptance and marker cleanup have not happened yet.
 
 ## Work allocation
 
 The reader was implemented by Codex with `gpt-6-astra` at high reasoning effort. Separate workers implemented the digest view, JSON route, board links and route tests with `gpt-6-luna` at low reasoning effort. Each worker used a separate Git worktree; the coordinator reviewed their changes, integrated the shared routes and performed the final checks. These model names identify the implementation workers, not a model called by the application. The digest itself is deterministic TypeScript and makes no LLM requests.
 
-The tracker is [GitHub Issues](https://github.com/MaChilicki/mega-dev-s01e04/issues?q=label%3Aplan%3Amorning-digest). Delivery for review and cleanup remain separate open issues. The root plan stays active until those conditions hold.
+The tracker is [GitHub Issues](https://github.com/MaChilicki/mega-dev-s01e04/issues?q=label%3Aplan%3Amorning-digest). Delivery issue 6 is closed after the reviewer received the URL. Cleanup issue 7 remains open, and the root plan stays active until its condition holds.
